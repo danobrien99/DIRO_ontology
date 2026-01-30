@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this ontology, please cite it as below."
+title: "DIRO ontology"
+version: "1.0"
+authors:
+  - given-names: "Daniel"
+    family-names: "O'Brien"
+    affiliation: "OBSS Inc."
+    website: "https://ecognos.io"
+repository-code:  "https://github.com/danobrien99/DIRO_ontology.git"

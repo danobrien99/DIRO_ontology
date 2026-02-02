@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://ecognos.io/ontology/diro#"
-     xml:base="https://ecognos.io/ontology/diro"
+<rdf:RDF xmlns="https://w3id.org/diro/ontology/diro#"
+     xml:base="https://w3id.org/diro/ontology/diro"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:diro="https://ecognos.io/ontology/diro#"
+     xmlns:diro="https://w3id.org/diro/ontology/diro#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://ecognos.io/ontology/diro">
+    <owl:Ontology rdf:about="https://w3id.org/diro/ontology/diro">
         <rdfs:comment>TNFD-aligned DIRO Ontology with Ecosystem Services and Impact Drivers.</rdfs:comment>
     </owl:Ontology>
     
@@ -24,17 +24,17 @@
     
 
 
-    <!-- https://ecognos.io/ontology/diro#analysisLevel -->
+    <!-- https://w3id.org/diro/ontology/diro#analysisLevel -->
 
-    <owl:AnnotationProperty rdf:about="https://ecognos.io/ontology/diro#analysisLevel">
+    <owl:AnnotationProperty rdf:about="https://w3id.org/diro/ontology/diro#analysisLevel">
         <rdfs:label xml:lang="en">analysisLevel</rdfs:label>
     </owl:AnnotationProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#isicCode -->
+    <!-- https://w3id.org/diro/ontology/diro#isicCode -->
 
-    <owl:AnnotationProperty rdf:about="https://ecognos.io/ontology/diro#isicCode">
+    <owl:AnnotationProperty rdf:about="https://w3id.org/diro/ontology/diro#isicCode">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:AnnotationProperty>
     
@@ -60,186 +60,186 @@
     
 
 
-    <!-- https://ecognos.io/ontology/diro#affects -->
+    <!-- https://w3id.org/diro/ontology/diro#affects -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#affects">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#affects">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#assignedProcess -->
+    <!-- https://w3id.org/diro/ontology/diro#assignedProcess -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#assignedProcess">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#ProcessAssignment"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#assignedProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#ProcessAssignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#atRiskFrom -->
+    <!-- https://w3id.org/diro/ontology/diro#atRiskFrom -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#atRiskFrom">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#EcosystemService"/>
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#SensitiveArea"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#atRiskFrom">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemService"/>
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#SensitiveArea"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ecognos.io/ontology/diro#EcosystemService"/>
-                    <rdf:Description rdf:about="https://ecognos.io/ontology/diro#SensitiveArea"/>
+                    <rdf:Description rdf:about="https://w3id.org/diro/ontology/diro#EcosystemService"/>
+                    <rdf:Description rdf:about="https://w3id.org/diro/ontology/diro#SensitiveArea"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#Risk"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#Risk"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#belongsTo -->
+    <!-- https://w3id.org/diro/ontology/diro#belongsTo -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#belongsTo">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Company"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#Industry"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#belongsTo">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Company"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#Industry"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#causes -->
+    <!-- https://w3id.org/diro/ontology/diro#causes -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#causes">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#causes">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#dependsOn -->
+    <!-- https://w3id.org/diro/ontology/diro#dependsOn -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#dependsOn">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Asset"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#EcosystemService"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#dependsOn">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Asset"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemService"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#drives -->
+    <!-- https://w3id.org/diro/ontology/diro#drives -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#drives">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#drives">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#generatesImpactDriver -->
+    <!-- https://w3id.org/diro/ontology/diro#generatesImpactDriver -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#generatesImpactDriver">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#generatesImpactDriver">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#hasBaselineCondition -->
+    <!-- https://w3id.org/diro/ontology/diro#hasBaselineCondition -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#hasBaselineCondition">
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#hasBaselineCondition">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:label xml:lang="en">hasBaselineCondition</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#hasEvidenceCue -->
+    <!-- https://w3id.org/diro/ontology/diro#hasEvidenceCue -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#hasEvidenceCue">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#EvidenceCue"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#hasEvidenceCue">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#EvidenceCue"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#hasLifeCycleStage -->
+    <!-- https://w3id.org/diro/ontology/diro#hasLifeCycleStage -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#hasLifeCycleStage">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#LifeCycleStage"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#hasLifeCycleStage">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#LifeCycleStage"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#hasLocation -->
+    <!-- https://w3id.org/diro/ontology/diro#hasLocation -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#hasLocation">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Asset"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#Location"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#hasLocation">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Asset"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#Location"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#hasObservedProcess -->
+    <!-- https://w3id.org/diro/ontology/diro#hasObservedProcess -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#hasObservedProcess">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Asset"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#hasObservedProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Asset"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#hasProcess -->
+    <!-- https://w3id.org/diro/ontology/diro#hasProcess -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#hasProcess">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Asset"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#hasProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Asset"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#hasProcessAssignment -->
+    <!-- https://w3id.org/diro/ontology/diro#hasProcessAssignment -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#hasProcessAssignment">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Asset"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#ProcessAssignment"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#hasProcessAssignment">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Asset"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#ProcessAssignment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#hasReferenceCondition -->
+    <!-- https://w3id.org/diro/ontology/diro#hasReferenceCondition -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#hasReferenceCondition">
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#hasReferenceCondition">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:label xml:lang="en">hasReferenceCondition</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#hasTypicalProcess -->
+    <!-- https://w3id.org/diro/ontology/diro#hasTypicalProcess -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#hasTypicalProcess">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#IndustryClass"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#hasTypicalProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#IndustryClass"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#impacts -->
+    <!-- https://w3id.org/diro/ontology/diro#impacts -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#impacts">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#EcosystemService"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#SensitiveArea"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#impacts">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemService"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#SensitiveArea"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#locatedIn -->
+    <!-- https://w3id.org/diro/ontology/diro#locatedIn -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#locatedIn">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Location"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#locatedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Location"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ecognos.io/ontology/diro#Biome"/>
-                    <rdf:Description rdf:about="https://ecognos.io/ontology/diro#SensitiveArea"/>
+                    <rdf:Description rdf:about="https://w3id.org/diro/ontology/diro#Biome"/>
+                    <rdf:Description rdf:about="https://w3id.org/diro/ontology/diro#SensitiveArea"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -247,20 +247,20 @@
     
 
 
-    <!-- https://ecognos.io/ontology/diro#owns -->
+    <!-- https://w3id.org/diro/ontology/diro#owns -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#owns">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Company"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#Asset"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#owns">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Company"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#Asset"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#supports -->
+    <!-- https://w3id.org/diro/ontology/diro#supports -->
 
-    <owl:ObjectProperty rdf:about="https://ecognos.io/ontology/diro#supports">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Biome"/>
-        <rdfs:range rdf:resource="https://ecognos.io/ontology/diro#EcosystemService"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/diro/ontology/diro#supports">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Biome"/>
+        <rdfs:range rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemService"/>
     </owl:ObjectProperty>
     
 
@@ -276,164 +276,164 @@
     
 
 
-    <!-- https://ecognos.io/ontology/diro#assignmentStatus -->
+    <!-- https://w3id.org/diro/ontology/diro#assignmentStatus -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#assignmentStatus">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#ProcessAssignment"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#assignmentStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#ProcessAssignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#confidence -->
+    <!-- https://w3id.org/diro/ontology/diro#confidence -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#confidence">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#ProcessAssignment"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#confidence">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#ProcessAssignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#cueText -->
+    <!-- https://w3id.org/diro/ontology/diro#cueText -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#cueText">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#EvidenceCue"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#cueText">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#EvidenceCue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#cueType -->
+    <!-- https://w3id.org/diro/ontology/diro#cueType -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#cueType">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#EvidenceCue"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#cueType">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#EvidenceCue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#cueWeight -->
+    <!-- https://w3id.org/diro/ontology/diro#cueWeight -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#cueWeight">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#EvidenceCue"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#cueWeight">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#EvidenceCue"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#description -->
+    <!-- https://w3id.org/diro/ontology/diro#description -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#description">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#description">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#evidence -->
+    <!-- https://w3id.org/diro/ontology/diro#evidence -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#evidence">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#evidence">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#evidenceRef -->
+    <!-- https://w3id.org/diro/ontology/diro#evidenceRef -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#evidenceRef">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#ProcessAssignment"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#evidenceRef">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#ProcessAssignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#id -->
+    <!-- https://w3id.org/diro/ontology/diro#id -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#id">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#id">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#isicCode -->
+    <!-- https://w3id.org/diro/ontology/diro#isicCode -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#isicCode"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#isicCode"/>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#justification -->
+    <!-- https://w3id.org/diro/ontology/diro#justification -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#justification">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#ProcessAssignment"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#justification">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#ProcessAssignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#lastUpdated -->
+    <!-- https://w3id.org/diro/ontology/diro#lastUpdated -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#lastUpdated">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#lastUpdated">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#likelihood -->
+    <!-- https://w3id.org/diro/ontology/diro#likelihood -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#likelihood">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Risk"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#likelihood">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Risk"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#name -->
+    <!-- https://w3id.org/diro/ontology/diro#name -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#name">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#name">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#riskScore -->
+    <!-- https://w3id.org/diro/ontology/diro#riskScore -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#riskScore">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Risk"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#riskScore">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Risk"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#severity -->
+    <!-- https://w3id.org/diro/ontology/diro#severity -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#severity">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Risk"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#severity">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Risk"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#source -->
+    <!-- https://w3id.org/diro/ontology/diro#source -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#source">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#ProcessAssignment"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#source">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#ProcessAssignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#sourceId -->
+    <!-- https://w3id.org/diro/ontology/diro#sourceId -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#sourceId">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#sourceId">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#timescale -->
+    <!-- https://w3id.org/diro/ontology/diro#timescale -->
 
-    <owl:DatatypeProperty rdf:about="https://ecognos.io/ontology/diro#timescale">
-        <rdfs:domain rdf:resource="https://ecognos.io/ontology/diro#Risk"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/diro/ontology/diro#timescale">
+        <rdfs:domain rdf:resource="https://w3id.org/diro/ontology/diro#Risk"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -450,19 +450,19 @@
     
 
 
-    <!-- https://ecognos.io/ontology/diro#AccessToNewAndEmergingMarkets -->
+    <!-- https://w3id.org/diro/ontology/diro#AccessToNewAndEmergingMarkets -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#AccessToNewAndEmergingMarkets">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Opportunities"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#AccessToNewAndEmergingMarkets">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Opportunities"/>
         <rdfs:label xml:lang="en">Access to new and emerging markets</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#AcuteRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#AcuteRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#AcuteRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Risk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#AcuteRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Risk"/>
         <rdfs:comment xml:lang="en">Occurrence of short-term, specific events that change the state of nature.
 For example, oil
 spills, forest fires or pests affecting a harvest.</rdfs:comment>
@@ -471,14 +471,14 @@ spills, forest fires or pests affecting a harvest.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#AirFiltrationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#AirFiltrationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#AirFiltrationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#AirFiltrationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Air filtration services are the ecosystem contributions to the filtering of air-borne pollutants through the deposition, uptake, fixing and storage of pollutants by ecosystem components, particularly plants, that mitigates the harmful effects of the pollutants.
@@ -488,14 +488,14 @@ This is most commonly a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#AnimalBasedEnergy -->
+    <!-- https://w3id.org/diro/ontology/diro#AnimalBasedEnergy -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#AnimalBasedEnergy">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ProvisioningServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#AnimalBasedEnergy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ProvisioningServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesToTheSupplyOfNaturalInputsProvisioningServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesToTheSupplyOfNaturalInputsProvisioningServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Physical labour is provided by domesticated or commercial species, including oxen, horses, donkeys, goats and elephants.
@@ -505,14 +505,14 @@ These can be grouped as draught animals, pack animals and mounts.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#AreaOfFreshwaterUse -->
+    <!-- https://w3id.org/diro/ontology/diro#AreaOfFreshwaterUse -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#AreaOfFreshwaterUse">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#AreaOfFreshwaterUse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Freshwater area is used for the activity.
@@ -522,14 +522,14 @@ Examples of metrics include area of wetland, ponds, lakes, streams, rivers or pe
     
 
 
-    <!-- https://ecognos.io/ontology/diro#AreaOfLandUse -->
+    <!-- https://w3id.org/diro/ontology/diro#AreaOfLandUse -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#AreaOfLandUse">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#AreaOfLandUse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Land area is used for the activity.
@@ -539,14 +539,14 @@ Examples of metrics include area of agriculture, forestry, mines, infrastructure
     
 
 
-    <!-- https://ecognos.io/ontology/diro#AreaOfSeabedUse -->
+    <!-- https://w3id.org/diro/ontology/diro#AreaOfSeabedUse -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#AreaOfSeabedUse">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#AreaOfSeabedUse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Seabed area is used for the activity.
@@ -556,43 +556,43 @@ Examples of metrics include area of aquaculture by type, area of seabed mining b
     
 
 
-    <!-- https://ecognos.io/ontology/diro#Asset -->
+    <!-- https://w3id.org/diro/ontology/diro#Asset -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#Asset">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#Asset">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#dependsOn"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EcosystemService"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#dependsOn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemService"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#hasLifeCycleStage"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#LifeCycleStage"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#hasLifeCycleStage"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#LifeCycleStage"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#hasLocation"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#Location"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#Location"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#hasObservedProcess"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#hasObservedProcess"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#hasProcess"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#hasProcess"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#hasTypicalProcess"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#hasTypicalProcess"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A present economic resource controlled by the entity as a result of past events and from
@@ -602,29 +602,29 @@ which future economic benefits are expected to flow to the entity</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#BaselineCondition -->
+    <!-- https://w3id.org/diro/ontology/diro#BaselineCondition -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#BaselineCondition">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#BaselineCondition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
         <rdfs:label xml:lang="en">Baseline Condition</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#BaselineFlowMaintenanceServices -->
+    <!-- https://w3id.org/diro/ontology/diro#BaselineFlowMaintenanceServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#BaselineFlowMaintenanceServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#WaterFlowRegulationServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#BaselineFlowMaintenanceServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#WaterFlowRegulationServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#WaterRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#WaterRisk"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Baseline flow maintenance services</rdfs:label>
@@ -632,14 +632,14 @@ which future economic benefits are expected to flow to the entity</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#BiologicalControlServices -->
+    <!-- https://w3id.org/diro/ontology/diro#BiologicalControlServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#BiologicalControlServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#BiologicalControlServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Pest control services are the ecosystem contributions to the reduction in the incidence of species that may prevent or reduce the effects of pests on biomass production processes or other economic and human activity.
@@ -651,26 +651,26 @@ This is most commonly a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#BiomassProvisioningServices -->
+    <!-- https://w3id.org/diro/ontology/diro#BiomassProvisioningServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#BiomassProvisioningServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ProvisioningServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#BiomassProvisioningServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ProvisioningServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesToTheSupplyOfNaturalInputsProvisioningServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesToTheSupplyOfNaturalInputsProvisioningServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#VolatilityChangesToCostsOfMaterials"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#VolatilityChangesToCostsOfMaterials"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Biomass provisioning services include the ecosystem contributions to the growth of the following: cultivated plants that are harvested by economic units for various uses including food and fibre production, fodder and energy;
@@ -686,13 +686,13 @@ Biomass provisioning services are final ecosystem services (except the grazed bi
     
 
 
-    <!-- https://ecognos.io/ontology/diro#Biome -->
+    <!-- https://w3id.org/diro/ontology/diro#Biome -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#Biome">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#Biome">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#supports"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EcosystemService"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#supports"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemService"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Global-scale zones, generally defined by the type of plant life that they support in response
@@ -707,31 +707,31 @@ Biomes are derived from the top-down by subdivision of realms
     
 
 
-    <!-- https://ecognos.io/ontology/diro#BusinessProcess -->
+    <!-- https://w3id.org/diro/ontology/diro#BusinessProcess -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#BusinessProcess">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#BusinessProcess">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#drives"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#drives"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#hasEvidenceCue"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EvidenceCue"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#hasEvidenceCue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EvidenceCue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#hasLifeCycleStage"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#LifeCycleStage"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#hasLifeCycleStage"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#LifeCycleStage"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#hasProcessAssignment"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ProcessAssignment"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#hasProcessAssignment"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ProcessAssignment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Business Process</rdfs:label>
@@ -740,10 +740,10 @@ Biomes are derived from the top-down by subdivision of realms
     
 
 
-    <!-- https://ecognos.io/ontology/diro#CapitalAllocationInvestments -->
+    <!-- https://w3id.org/diro/ontology/diro#CapitalAllocationInvestments -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#CapitalAllocationInvestments">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Opportunities"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#CapitalAllocationInvestments">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Opportunities"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of public-sector incentives (e.g.
 biodiversity credits, payments for ecosystem services)</rdfs:comment>
         <rdfs:label xml:lang="en">Capital allocation/ investments</rdfs:label>
@@ -751,64 +751,64 @@ biodiversity credits, payments for ecosystem services)</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ChangeInSentimentTowardsTheOrganizationDueToImpactsOnNature -->
+    <!-- https://w3id.org/diro/ontology/diro#ChangeInSentimentTowardsTheOrganizationDueToImpactsOnNature -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ChangeInSentimentTowardsTheOrganizationDueToImpactsOnNature">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ReputationRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ChangeInSentimentTowardsTheOrganizationDueToImpactsOnNature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ReputationRisk"/>
         <rdfs:label xml:lang="en">Change in sentiment towards the organization due to impacts on nature</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices -->
+    <!-- https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#PhysicalRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#PhysicalRisk"/>
         <rdfs:label xml:lang="en">Changes in other regulating and maintenance ecosystem services</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ChangesInRecreationalValueOfArea -->
+    <!-- https://w3id.org/diro/ontology/diro#ChangesInRecreationalValueOfArea -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ChangesInRecreationalValueOfArea">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#PhysicalRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ChangesInRecreationalValueOfArea">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#PhysicalRisk"/>
         <rdfs:label xml:lang="en">Changes in recreational value of area</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ChangesToLegislationRegulations -->
+    <!-- https://w3id.org/diro/ontology/diro#ChangesToLegislationRegulations -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ChangesToLegislationRegulations">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#PolicyAndLegalRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ChangesToLegislationRegulations">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#PolicyAndLegalRisk"/>
         <rdfs:label xml:lang="en">Changes to legislation/regulations</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#PhysicalRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#PhysicalRisk"/>
         <rdfs:label xml:lang="en">Changes to protection from natural hazards due to change in hazard mitigation services</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ChangesToTheSupplyOfNaturalInputsProvisioningServices -->
+    <!-- https://w3id.org/diro/ontology/diro#ChangesToTheSupplyOfNaturalInputsProvisioningServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ChangesToTheSupplyOfNaturalInputsProvisioningServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#PhysicalRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ChangesToTheSupplyOfNaturalInputsProvisioningServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#PhysicalRisk"/>
         <rdfs:label xml:lang="en">Changes to the supply of natural inputs (provisioning services)</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ChronicRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#ChronicRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ChronicRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Risk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ChronicRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Risk"/>
         <rdfs:comment xml:lang="en">Gradual changes to the state of nature.
 For example, pollution stemming from pesticide
 use or climate change.</rdfs:comment>
@@ -817,14 +817,14 @@ use or climate change.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#CoastalProtectionServices -->
+    <!-- https://w3id.org/diro/ontology/diro#CoastalProtectionServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#CoastalProtectionServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#FloodMitigationServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#CoastalProtectionServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#FloodMitigationServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Coastal protection services</rdfs:label>
@@ -832,19 +832,19 @@ use or climate change.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#Company -->
+    <!-- https://w3id.org/diro/ontology/diro#Company -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#Company">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#Company">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#belongsTo"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#Industry"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#Industry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#owns"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#Asset"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#owns"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#Asset"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Company</rdfs:label>
@@ -852,38 +852,38 @@ use or climate change.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#CulturalServices -->
+    <!-- https://w3id.org/diro/ontology/diro#CulturalServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#CulturalServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#EcosystemService"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#CulturalServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemService"/>
         <rdfs:label>Cultural services</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#DeclineInBrandAndValuePropositionDueToImpactsOnNature -->
+    <!-- https://w3id.org/diro/ontology/diro#DeclineInBrandAndValuePropositionDueToImpactsOnNature -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#DeclineInBrandAndValuePropositionDueToImpactsOnNature">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ReputationRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#DeclineInBrandAndValuePropositionDueToImpactsOnNature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ReputationRisk"/>
         <rdfs:label xml:lang="en">Decline in brand and value proposition due to impacts on nature</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#DilutionByAtmosphereAndEcosystems -->
+    <!-- https://w3id.org/diro/ontology/diro#DilutionByAtmosphereAndEcosystems -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#DilutionByAtmosphereAndEcosystems">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#DilutionByAtmosphereAndEcosystems">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#WaterRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#WaterRisk"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Water, both fresh and saline, and the atmosphere can dilute the gases, fluids and solid waste produced by human activity.</rdfs:comment>
@@ -892,22 +892,22 @@ use or climate change.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#DirectOperations -->
+    <!-- https://w3id.org/diro/ontology/diro#DirectOperations -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#DirectOperations">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#DirectOperations">
         <rdfs:label xml:lang="en">Direct Operations</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#DiseaseControlServices -->
+    <!-- https://w3id.org/diro/ontology/diro#DiseaseControlServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#DiseaseControlServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#BiologicalControlServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#DiseaseControlServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#BiologicalControlServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Disease control services</rdfs:label>
@@ -915,14 +915,14 @@ use or climate change.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#Disturbances -->
+    <!-- https://w3id.org/diro/ontology/diro#Disturbances -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#Disturbances">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#Disturbances">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Activity produces noise or light pollution that has potential to harm organisms.
@@ -932,31 +932,31 @@ Examples of metrics include decibels and duration of noise, lumens and duration 
     
 
 
-    <!-- https://ecognos.io/ontology/diro#DownstreamValueChain -->
+    <!-- https://w3id.org/diro/ontology/diro#DownstreamValueChain -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#DownstreamValueChain">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#IndirectOperations"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#DownstreamValueChain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#IndirectOperations"/>
         <rdfs:label xml:lang="en">Downstream value chain</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#EcosystemProtectionRestorationAndRegeneration -->
+    <!-- https://w3id.org/diro/ontology/diro#EcosystemProtectionRestorationAndRegeneration -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#EcosystemProtectionRestorationAndRegeneration">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Opportunities"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#EcosystemProtectionRestorationAndRegeneration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Opportunities"/>
         <rdfs:label xml:lang="en">Ecosystem protection, restoration and regeneration</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#EcosystemService -->
+    <!-- https://w3id.org/diro/ontology/diro#EcosystemService -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#EcosystemService">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#EcosystemService">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#Risk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#Risk"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The contributions of ecosystems to the benefits that are used in economic and other
@@ -966,10 +966,10 @@ human activity</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#EcosystemStabilityRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#EcosystemStabilityRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#EcosystemStabilityRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#SystemicRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#EcosystemStabilityRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#SystemicRisk"/>
         <rdfs:comment xml:lang="en">Risk of an event that leads to a destabilisation of a critical natural system, so it no longer can provide ecosystem services in the same manner as before.
 For example, tipping points are reached, regime shifts and/or ecosystem collapses occur that generate forms of physical and/or transition risk.
 This is one form of nature-related systemic risk.</rdfs:comment>
@@ -979,14 +979,14 @@ This is one form of nature-related systemic risk.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#EducationScientificAndResearchServices -->
+    <!-- https://w3id.org/diro/ontology/diro#EducationScientificAndResearchServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#EducationScientificAndResearchServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#CulturalServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#EducationScientificAndResearchServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#CulturalServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInRecreationalValueOfArea"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInRecreationalValueOfArea"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Education, scientific and research services are the ecosystem contributions, in particular through the biophysical characteristics and qualities of ecosystems, that enable people to use the environment through intellectual interactions with the environment.
@@ -996,23 +996,23 @@ This is a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon -->
+    <!-- https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#PhysicalRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#PhysicalRisk"/>
         <rdfs:label xml:lang="en">Effects on species, including ones that an organisation depends upon</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#EmissionsOfGhg -->
+    <!-- https://w3id.org/diro/ontology/diro#EmissionsOfGhg -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#EmissionsOfGhg">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#EmissionsOfGhg">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Activity emits GHG.
@@ -1022,14 +1022,14 @@ Examples include volume of carbon dioxide (CO2), methane (CH4), nitrous oxide (N
     
 
 
-    <!-- https://ecognos.io/ontology/diro#EmissionsOfNonghgAirPollutants -->
+    <!-- https://w3id.org/diro/ontology/diro#EmissionsOfNonghgAirPollutants -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#EmissionsOfNonghgAirPollutants">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#EmissionsOfNonghgAirPollutants">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Activity emits non GHG air pollutants.
@@ -1039,14 +1039,14 @@ Examples include volume of fine particulate matter (PM2.5), Volatile Organic Com
     
 
 
-    <!-- https://ecognos.io/ontology/diro#EmissionsOfNutrientPollutantsToWaterAndSoil -->
+    <!-- https://w3id.org/diro/ontology/diro#EmissionsOfNutrientPollutantsToWaterAndSoil -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#EmissionsOfNutrientPollutantsToWaterAndSoil">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#EmissionsOfNutrientPollutantsToWaterAndSoil">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Activity emits nutrient pollutants to water and soil.
@@ -1056,14 +1056,14 @@ Examples include volume of nitrogen and phosphorous, etc.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#EmissionsOfToxicPollutantsToWaterAndSoil -->
+    <!-- https://w3id.org/diro/ontology/diro#EmissionsOfToxicPollutantsToWaterAndSoil -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#EmissionsOfToxicPollutantsToWaterAndSoil">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#EmissionsOfToxicPollutantsToWaterAndSoil">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Activity emits toxic pollutants to water and soil.
@@ -1073,18 +1073,18 @@ Examples include volume of heavy metals, pesticides, etc.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#EvidenceCue -->
+    <!-- https://w3id.org/diro/ontology/diro#EvidenceCue -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#EvidenceCue">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#EvidenceCue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#FinancialStabilityRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#FinancialStabilityRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#FinancialStabilityRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#SystemicRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#FinancialStabilityRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#SystemicRisk"/>
         <rdfs:comment xml:lang="en">Risk that a materialisation and compounding of physical and/or transition risk leads to the destabilisation of an entire financial system.
 It is one type of nature-related systemic risk.</rdfs:comment>
         <rdfs:label xml:lang="en">Financial Stability Risk</rdfs:label>
@@ -1093,14 +1093,14 @@ It is one type of nature-related systemic risk.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#FloodMitigationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#FloodMitigationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#FloodMitigationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#FloodMitigationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Coastal protection services are the ecosystem contributions of linear elements in the seascape, for instance 
@@ -1113,14 +1113,14 @@ This is a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#GenerationAndReleaseOfSolidWaste -->
+    <!-- https://w3id.org/diro/ontology/diro#GenerationAndReleaseOfSolidWaste -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#GenerationAndReleaseOfSolidWaste">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#GenerationAndReleaseOfSolidWaste">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Activity generates solid waste.
@@ -1130,26 +1130,26 @@ Examples include volume of organic, plastic, metal and electronic waste, etc.</r
     
 
 
-    <!-- https://ecognos.io/ontology/diro#GeneticMaterialServices -->
+    <!-- https://w3id.org/diro/ontology/diro#GeneticMaterialServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#GeneticMaterialServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ProvisioningServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#GeneticMaterialServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ProvisioningServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangeInSentimentTowardsTheOrganizationDueToImpactsOnNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangeInSentimentTowardsTheOrganizationDueToImpactsOnNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesToTheSupplyOfNaturalInputsProvisioningServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesToTheSupplyOfNaturalInputsProvisioningServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Genetic material services are the ecosystem contributions from all biota (including seed, spore or gamete production) that are used by economic units, for example (i) to develop new animal and plant breeds;
@@ -1160,20 +1160,20 @@ This is most commonly recorded as an intermediate service to biomass provisionin
     
 
 
-    <!-- https://ecognos.io/ontology/diro#GlobalClimateRegulationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#GlobalClimateRegulationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#GlobalClimateRegulationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#GlobalClimateRegulationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesToLegislationRegulations"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesToLegislationRegulations"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Global climate regulation services are the ecosystem contributions to the regulation of the chemical composition of the atmosphere and oceans that affect global climate through the accumulation and retention of carbon and other GHG (e.g., methane) in ecosystems and the ability of ecosystems to 
@@ -1183,13 +1183,13 @@ remove (sequester) carbon from the atmosphere. This is a final ecosystem service
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ImpactDriver -->
+    <!-- https://w3id.org/diro/ontology/diro#ImpactDriver -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ImpactDriver">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ImpactDriver">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurable quantity of a natural resource that is used or a non-product output generated by business.
@@ -1200,48 +1200,48 @@ atmosphere by a manufacturing facility).</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#IndirectOperations -->
+    <!-- https://w3id.org/diro/ontology/diro#IndirectOperations -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#IndirectOperations">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#IndirectOperations">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">supply chain</rdfs:comment>
         <rdfs:label xml:lang="en">Indirect Operations</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#Industry -->
+    <!-- https://w3id.org/diro/ontology/diro#Industry -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#Industry">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#Industry">
         <rdfs:label>Industry</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#IndustryClass -->
+    <!-- https://w3id.org/diro/ontology/diro#IndustryClass -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#IndustryClass">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Industry"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#IndustryClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Industry"/>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#IntegratedMultiStakeholderAction -->
+    <!-- https://w3id.org/diro/ontology/diro#IntegratedMultiStakeholderAction -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#IntegratedMultiStakeholderAction">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#EcosystemProtectionRestorationAndRegeneration"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#IntegratedMultiStakeholderAction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemProtectionRestorationAndRegeneration"/>
         <rdfs:label xml:lang="en">Integrated multi-stakeholder action at land/seascape/river basin/jurisdictional/sector scale.</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#IntroductionOfInvasiveSpecies -->
+    <!-- https://w3id.org/diro/ontology/diro#IntroductionOfInvasiveSpecies -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#IntroductionOfInvasiveSpecies">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#IntroductionOfInvasiveSpecies">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Activity introduces invasive species.
@@ -1251,20 +1251,20 @@ Examples of metrics include number of invasive species introduced, etc.</rdfs:co
     
 
 
-    <!-- https://ecognos.io/ontology/diro#LandslideMitigationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#LandslideMitigationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#LandslideMitigationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#SoilAndSedimentRetentionServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#LandslideMitigationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#SoilAndSedimentRetentionServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Landslide mitigation services</rdfs:label>
@@ -1272,10 +1272,10 @@ Examples of metrics include number of invasive species introduced, etc.</rdfs:co
     
 
 
-    <!-- https://ecognos.io/ontology/diro#LiabilityRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#LiabilityRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#LiabilityRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#TransitionRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#LiabilityRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#TransitionRisk"/>
         <rdfs:comment xml:lang="en">Arising directly or indirectly from legal claims.
 As laws, regulations and case law related
 to an organization’s preparedness for nature action evolves, the incident or probability of
@@ -1285,22 +1285,22 @@ contingent liabilities arising from an organization may increase.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#LifeCycleStage -->
+    <!-- https://w3id.org/diro/ontology/diro#LifeCycleStage -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#LifeCycleStage">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#LifeCycleStage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#LocalMicroAndMesoClimateRegulation -->
+    <!-- https://w3id.org/diro/ontology/diro#LocalMicroAndMesoClimateRegulation -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#LocalMicroAndMesoClimateRegulation">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#LocalMicroAndMesoClimateRegulation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Local climate regulation services are the ecosystem contributions to the regulation of ambient atmospheric conditions (including micro and mesoscale climates) through the presence of vegetation that improves the living conditions for people and supports economic production.
@@ -1311,19 +1311,19 @@ This may be a final or intermediate service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#Location -->
+    <!-- https://w3id.org/diro/ontology/diro#Location -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#Location">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#Location">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#locatedIn"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#Biome"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#locatedIn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#Biome"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#locatedIn"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#SensitiveArea"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#locatedIn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#SensitiveArea"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Location</rdfs:label>
@@ -1331,19 +1331,19 @@ This may be a final or intermediate service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#MarketRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#MarketRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#MarketRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#TransitionRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#MarketRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#TransitionRisk"/>
         <rdfs:label xml:lang="en">Market Risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#MaterialLocation -->
+    <!-- https://w3id.org/diro/ontology/diro#MaterialLocation -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#MaterialLocation">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#PriorityLocation"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#MaterialLocation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#PriorityLocation"/>
         <rdfs:comment xml:lang="en">Locations where an organization has identified material nature-related dependencies, impacts, risks and opportunities in its direct operations 
 and upstream and downstream value chain(s)</rdfs:comment>
         <rdfs:label xml:lang="en">Material Location</rdfs:label>
@@ -1351,14 +1351,14 @@ and upstream and downstream value chain(s)</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#MediationOfSensoryImpactsOtherThanNoise -->
+    <!-- https://w3id.org/diro/ontology/diro#MediationOfSensoryImpactsOtherThanNoise -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#MediationOfSensoryImpactsOtherThanNoise">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#MediationOfSensoryImpactsOtherThanNoise">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Vegetation is the main (natural) barrier used to reduce light pollution and other sensory impacts, limiting the 
@@ -1368,32 +1368,32 @@ impact it can have on human health and the environment.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#MoreStringentNatureRelatedReportingObligations -->
+    <!-- https://w3id.org/diro/ontology/diro#MoreStringentNatureRelatedReportingObligations -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#MoreStringentNatureRelatedReportingObligations">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#PolicyAndLegalRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#MoreStringentNatureRelatedReportingObligations">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#PolicyAndLegalRisk"/>
         <rdfs:label xml:lang="en">More stringent nature-related reporting obligations</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#NewMonitoringTechnologiesUsedByRegulatorsAndOtherStakeholders -->
+    <!-- https://w3id.org/diro/ontology/diro#NewMonitoringTechnologiesUsedByRegulatorsAndOtherStakeholders -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#NewMonitoringTechnologiesUsedByRegulatorsAndOtherStakeholders">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#TechnologyRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#NewMonitoringTechnologiesUsedByRegulatorsAndOtherStakeholders">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#TechnologyRisk"/>
         <rdfs:label xml:lang="en">New monitoring technologies used by regulators and other stakeholders</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#NoiseAttenuationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#NoiseAttenuationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#NoiseAttenuationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#NoiseAttenuationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Noise attenuation services are the ecosystem contributions to the reduction in the impact of noise on people that mitigates its harmful or stressful effects.
@@ -1403,14 +1403,14 @@ This is most commonly a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#NurseryPopulationAndHabitatMaintenanceServices -->
+    <!-- https://w3id.org/diro/ontology/diro#NurseryPopulationAndHabitatMaintenanceServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#NurseryPopulationAndHabitatMaintenanceServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#NurseryPopulationAndHabitatMaintenanceServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Nursery population and habitat maintenance services are the ecosystem contributions necessary for sustaining populations of species that economic units ultimately use or enjoy either through the maintenance of habitats (e.g., for nurseries or migration) or the protection of natural gene pools.
@@ -1420,10 +1420,10 @@ This service is an intermediate service and may input to a number of different f
     
 
 
-    <!-- https://ecognos.io/ontology/diro#OperationalRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#OperationalRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#OperationalRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#TransitionRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#OperationalRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#TransitionRisk"/>
         <rdfs:comment xml:lang="en">Increasing 
 legal and regulatory compliance costs associated with investments and
 businesses. For example, a financial institution may face regulatory, reputational, or liability risks as a result of financing a company engaged in activities that contribute to deforestation.
@@ -1433,22 +1433,22 @@ Facilities/suppliers of the financial institution may be affected by flooding or
     
 
 
-    <!-- https://ecognos.io/ontology/diro#Opportunities -->
+    <!-- https://w3id.org/diro/ontology/diro#Opportunities -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#Opportunities">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#Opportunities">
         <rdfs:label xml:lang="en">Opportunities</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#OtherAbioticResourceExtraction -->
+    <!-- https://w3id.org/diro/ontology/diro#OtherAbioticResourceExtraction -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#OtherAbioticResourceExtraction">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#OtherAbioticResourceExtraction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Activity extracts minerals, aggregate or other non-biological materials from the environment.</rdfs:comment>
@@ -1457,14 +1457,14 @@ Facilities/suppliers of the financial institution may be affected by flooding or
     
 
 
-    <!-- https://ecognos.io/ontology/diro#OtherBioticResourceExtraction -->
+    <!-- https://w3id.org/diro/ontology/diro#OtherBioticResourceExtraction -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#OtherBioticResourceExtraction">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#OtherBioticResourceExtraction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Activity extracts biological materials from the environment.
@@ -1474,20 +1474,20 @@ Examples of metrics include wild caught fish, timber, etc.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#PeakFlowMitigationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#PeakFlowMitigationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#PeakFlowMitigationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#WaterFlowRegulationServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#PeakFlowMitigationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#WaterFlowRegulationServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Peak flow mitigation services</rdfs:label>
@@ -1495,14 +1495,14 @@ Examples of metrics include wild caught fish, timber, etc.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#PestControlServices -->
+    <!-- https://w3id.org/diro/ontology/diro#PestControlServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#PestControlServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#BiologicalControlServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#PestControlServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#BiologicalControlServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Pest control services</rdfs:label>
@@ -1510,10 +1510,10 @@ Examples of metrics include wild caught fish, timber, etc.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#PhysicalRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#PhysicalRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#PhysicalRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Risk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#PhysicalRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Risk"/>
         <rdfs:comment xml:lang="en">Nature-related physical risks are risks resulting from the degradation of nature (such as
 changes in ecosystem equilibria, including soil quality and species composition) and
 consequential loss of ecosystem services that economic activity depends upon.
@@ -1529,24 +1529,24 @@ usually location-specific.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#PolicyAndLegalRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#PolicyAndLegalRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#PolicyAndLegalRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#TransitionRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#PolicyAndLegalRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#TransitionRisk"/>
         <rdfs:comment xml:lang="en">Changes in the policy and/or regulatory context due to new (or enforcement of existing) policies and regulations associated with creating positive impacts on nature or mitigating negative impacts on nature.</rdfs:comment>
         <rdfs:label xml:lang="en">Policy and Legal Risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#PollinationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#PollinationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#PollinationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#PollinationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Pollination services are the ecosystem contributions by wild pollinators to the fertilization of crops that maintains or increases the abundance and/or diversity of other species that economic units use or enjoy.
@@ -1556,57 +1556,57 @@ This may be recorded as a final or intermediate service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#PriorityLocation -->
+    <!-- https://w3id.org/diro/ontology/diro#PriorityLocation -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#PriorityLocation">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Location"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#PriorityLocation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Location"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Priority locations are locations that are: Material locations and/or Sensitive locations</rdfs:comment>
         <rdfs:label xml:lang="en">Priority Location</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ProcessAssignment -->
+    <!-- https://w3id.org/diro/ontology/diro#ProcessAssignment -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ProcessAssignment">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#BusinessProcess"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ProcessAssignment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#BusinessProcess"/>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ProductsAndServices -->
+    <!-- https://w3id.org/diro/ontology/diro#ProductsAndServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ProductsAndServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Opportunities"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ProductsAndServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Opportunities"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">New business model/activities with positive impacts on nature/reduced negative impacts on nature</rdfs:comment>
         <rdfs:label xml:lang="en">Products and Services</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ProvisioningServices -->
+    <!-- https://w3id.org/diro/ontology/diro#ProvisioningServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ProvisioningServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#EcosystemService"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ProvisioningServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemService"/>
         <rdfs:label>Provisioning services</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#RainfallPatternRegulation -->
+    <!-- https://w3id.org/diro/ontology/diro#RainfallPatternRegulation -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#RainfallPatternRegulation">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#RainfallPatternRegulation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#WaterRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#WaterRisk"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Rainfall pattern regulation services are the ecosystem contributions of vegetation, in particular forests, in maintaining rainfall patterns through evapotranspiration at the sub-continental scale.
@@ -1618,14 +1618,14 @@ This may be a final or intermediate service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#RecreationRelatedServices -->
+    <!-- https://w3id.org/diro/ontology/diro#RecreationRelatedServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#RecreationRelatedServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#CulturalServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#RecreationRelatedServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#CulturalServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInRecreationalValueOfArea"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInRecreationalValueOfArea"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Recreation-related services are the ecosystem contributions, in particular through the biophysical characteristics and qualities of ecosystems, that enable people to use and enjoy the environment through direct, in-situ, physical and experiential interactions with the environment.
@@ -1637,10 +1637,10 @@ This is a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ReferenceCondition -->
+    <!-- https://w3id.org/diro/ontology/diro#ReferenceCondition -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ReferenceCondition">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ReferenceCondition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The condition against which past, present and future ecosystem condition (or other aspect
 of the state of nature) is compared in order to measure relative change over time.</rdfs:comment>
         <rdfs:label xml:lang="en">Reference Condition</rdfs:label>
@@ -1648,48 +1648,48 @@ of the state of nature) is compared in order to measure relative change over tim
     
 
 
-    <!-- https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices -->
+    <!-- https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#EcosystemService"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemService"/>
         <rdfs:label>Regulating and maintenance services</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ReputationRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#ReputationRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ReputationRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#TransitionRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ReputationRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#TransitionRisk"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes in perception concerning a company’s actual or perceived nature impacts, including at a local, economic and societal level, that can result from direct company impacts, industry impacts, and/or impacts of upstream / downstream operations.</rdfs:comment>
         <rdfs:label xml:lang="en">Reputation Risk</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ReputationalCapital -->
+    <!-- https://w3id.org/diro/ontology/diro#ReputationalCapital -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ReputationalCapital">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Opportunities"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ReputationalCapital">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Opportunities"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collaborative engagement with stakeholders and rightsholders, at local, national and international levels.</rdfs:comment>
         <rdfs:label xml:lang="en">Reputational Capital</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ResourceEfficiency -->
+    <!-- https://w3id.org/diro/ontology/diro#ResourceEfficiency -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ResourceEfficiency">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Opportunities"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ResourceEfficiency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Opportunities"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transition to efficient and circular production systems and value chains.</rdfs:comment>
         <rdfs:label xml:lang="en">Resource Efficiency</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#Risk -->
+    <!-- https://w3id.org/diro/ontology/diro#Risk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#Risk">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#Risk">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential threats (effects of uncertainty) posed to an organization that arise from its and wider society’s dependencies and 
 impacts on nature.</rdfs:comment>
         <rdfs:label>Risk</rdfs:label>
@@ -1697,14 +1697,14 @@ impacts on nature.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#RiverFloodMitigationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#RiverFloodMitigationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#RiverFloodMitigationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#FloodMitigationServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#RiverFloodMitigationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#FloodMitigationServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>River flood mitigation services</rdfs:label>
@@ -1712,43 +1712,43 @@ impacts on nature.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#SensitiveArea -->
+    <!-- https://w3id.org/diro/ontology/diro#SensitiveArea -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#SensitiveArea">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#SensitiveArea">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://webprotege.stanford.edu/RL8zPziBZ1Mb3nPY7t9wrh"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#Opportunities"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#Opportunities"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesToLegislationRegulations"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesToLegislationRegulations"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#DeclineInBrandAndValuePropositionDueToImpactsOnNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#DeclineInBrandAndValuePropositionDueToImpactsOnNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#NewMonitoringTechnologiesUsedByRegulatorsAndOtherStakeholders"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#NewMonitoringTechnologiesUsedByRegulatorsAndOtherStakeholders"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ShiftingCustomerInvestorValuesOrPreferences"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ShiftingCustomerInvestorValuesOrPreferences"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locations where the assets and/or activities in an organisation’s direct operations – and,
@@ -1760,10 +1760,10 @@ and/or Areas of high physical water risks; and/or Areas of importance for ecosys
     
 
 
-    <!-- https://ecognos.io/ontology/diro#SensitiveLocation -->
+    <!-- https://w3id.org/diro/ontology/diro#SensitiveLocation -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#SensitiveLocation">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#PriorityLocation"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#SensitiveLocation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#PriorityLocation"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locations where the assets and/or activities in its direct operations – and, where possible upstream and downstream value chain(s) – interface with nature in: Areas important for biodiversity;
 and/or Areas of high ecosystem integrity; and/or Areas of rapid decline in ecosystem integrity;
 and/or Areas of high physical water risks; and/or Areas of importance for ecosystem service provision, including benefits to Indigenous Peoples, Local Communities and stakeholders.</rdfs:comment>
@@ -1772,29 +1772,29 @@ and/or Areas of high physical water risks; and/or Areas of importance for ecosys
     
 
 
-    <!-- https://ecognos.io/ontology/diro#ShiftingCustomerInvestorValuesOrPreferences -->
+    <!-- https://w3id.org/diro/ontology/diro#ShiftingCustomerInvestorValuesOrPreferences -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#ShiftingCustomerInvestorValuesOrPreferences">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#MarketRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#ShiftingCustomerInvestorValuesOrPreferences">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#MarketRisk"/>
         <rdfs:label xml:lang="en">Shifting customer/investor values or preferences</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#SoilAndSedimentRetentionServices -->
+    <!-- https://w3id.org/diro/ontology/diro#SoilAndSedimentRetentionServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#SoilAndSedimentRetentionServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#SoilAndSedimentRetentionServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Soil erosion control services are the ecosystem contributions, particularly the stabilising effects of vegetation, that reduce the loss of soil (and sediment) and support use of the environment (e.g., agricultural activity, water 
@@ -1806,14 +1806,14 @@ This is a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#SoilErosionControlServices -->
+    <!-- https://w3id.org/diro/ontology/diro#SoilErosionControlServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#SoilErosionControlServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#SoilAndSedimentRetentionServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#SoilErosionControlServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#SoilAndSedimentRetentionServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Soil erosion control services</rdfs:label>
@@ -1821,14 +1821,14 @@ This is a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#SoilQualityRegulationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#SoilQualityRegulationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#SoilQualityRegulationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#SoilQualityRegulationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Soil quality regulation services are the ecosystem contributions to 
@@ -1839,20 +1839,20 @@ This is most commonly recorded as an intermediate service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#SolidWasteRemediation -->
+    <!-- https://w3id.org/diro/ontology/diro#SolidWasteRemediation -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#SolidWasteRemediation">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#SolidWasteRemediation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EffectsOnSpeciesIncludingOnesThatAnOrganisationDependsUpon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Solid waste remediation services are the ecosystem contributions to the transformation of organic or inorganic substances, through the action of micro-organisms, algae, plants and animals that mitigates their harmful effects.
@@ -1862,14 +1862,14 @@ This may be recorded as a final or intermediate service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#SpiritualArtisticAndSymbolicServices -->
+    <!-- https://w3id.org/diro/ontology/diro#SpiritualArtisticAndSymbolicServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#SpiritualArtisticAndSymbolicServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#CulturalServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#SpiritualArtisticAndSymbolicServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#CulturalServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInRecreationalValueOfArea"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInRecreationalValueOfArea"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Spiritual artistic and symbolic services are the ecosystem contributions, in particular through the biophysical characteristics and qualities of ecosystems, that are recognised by people for their cultural, historical, aesthetic, sacred or religious significance.
@@ -1880,37 +1880,37 @@ This is a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#StateOfNature -->
+    <!-- https://w3id.org/diro/ontology/diro#StateOfNature -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#StateOfNature">
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#StateOfNature">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://webprotege.stanford.edu/RL8zPziBZ1Mb3nPY7t9wrh"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#Opportunities"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#Opportunities"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#hasBaselineCondition"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#BaselineCondition"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#hasBaselineCondition"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#BaselineCondition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#hasReferenceCondition"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ReferenceCondition"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#hasReferenceCondition"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ReferenceCondition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#impacts"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#EcosystemService"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#impacts"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemService"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#impacts"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#SensitiveArea"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#impacts"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#SensitiveArea"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The condition and extent of ecosystems, and 
@@ -1921,14 +1921,14 @@ including positive or negative changes.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#StormMitigationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#StormMitigationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#StormMitigationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#StormMitigationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesToProtectionFromNaturalHazardsDueToChangeInHazardMitigationServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Storm mitigation services are the ecosystem contributions of vegetation including linear elements, in mitigating the impacts of wind, sand and other storms (other than water related events) on local communities.
@@ -1938,19 +1938,19 @@ This is a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#SupportingConservationOrRestorationProjects -->
+    <!-- https://w3id.org/diro/ontology/diro#SupportingConservationOrRestorationProjects -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#SupportingConservationOrRestorationProjects">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#EcosystemProtectionRestorationAndRegeneration"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#SupportingConservationOrRestorationProjects">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemProtectionRestorationAndRegeneration"/>
         <rdfs:label xml:lang="en">Supporting conservation or restoration projects</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#SystemicRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#SystemicRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#SystemicRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Risk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#SystemicRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Risk"/>
         <rdfs:comment xml:lang="en">Nature-related systemic risks are risks arising from the breakdown of the entire system,
 rather than the failure of individual parts.
 Nature-related systemic risks are characterised
@@ -1966,10 +1966,10 @@ ecosystems)</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#TechnologyRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#TechnologyRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#TechnologyRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#TransitionRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#TechnologyRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#TransitionRisk"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substitution of products or services with a reduced impact on nature and/or reduced
 dependency on nature.
 For example, loss of pollinators may be replaced by mechanical pollination technologies.</rdfs:comment>
@@ -1978,10 +1978,10 @@ For example, loss of pollinators may be replaced by mechanical pollination techn
     
 
 
-    <!-- https://ecognos.io/ontology/diro#TransitionRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#TransitionRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#TransitionRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#Risk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#TransitionRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#Risk"/>
         <rdfs:comment xml:lang="en">Nature-related transition risks are risks to an organization that stem from a misalignment
 of economic actors with actions aimed at protecting, restoring, and/or reducing negative
 impacts on nature.
@@ -1994,32 +1994,32 @@ example, revised policies.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#TransitionToProcessesWithLowerNegativeImpactsOnNatureIncreasedPositiveImpactsOnNature -->
+    <!-- https://w3id.org/diro/ontology/diro#TransitionToProcessesWithLowerNegativeImpactsOnNatureIncreasedPositiveImpactsOnNature -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#TransitionToProcessesWithLowerNegativeImpactsOnNatureIncreasedPositiveImpactsOnNature">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#EcosystemProtectionRestorationAndRegeneration"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#TransitionToProcessesWithLowerNegativeImpactsOnNatureIncreasedPositiveImpactsOnNature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#EcosystemProtectionRestorationAndRegeneration"/>
         <rdfs:label xml:lang="en">Transition to processes with lower negative impacts on nature/increased positive impacts on nature.</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#UpstreamValueChain -->
+    <!-- https://w3id.org/diro/ontology/diro#UpstreamValueChain -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#UpstreamValueChain">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#IndirectOperations"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#UpstreamValueChain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#IndirectOperations"/>
         <rdfs:label xml:lang="en">Upstream value chain</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#VisualAmenityServices -->
+    <!-- https://w3id.org/diro/ontology/diro#VisualAmenityServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#VisualAmenityServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#CulturalServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#VisualAmenityServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#CulturalServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInRecreationalValueOfArea"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInRecreationalValueOfArea"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Visual amenity services are the ecosystem contributions to local living conditions, in particular through the biophysical characteristics and qualities of ecosystems that provide sensory benefits, especially visual.
@@ -2030,23 +2030,23 @@ This is a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#VolatilityChangesToCostsOfMaterials -->
+    <!-- https://w3id.org/diro/ontology/diro#VolatilityChangesToCostsOfMaterials -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#VolatilityChangesToCostsOfMaterials">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#MarketRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#VolatilityChangesToCostsOfMaterials">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#MarketRisk"/>
         <rdfs:label xml:lang="en">Volatility/changes to costs of materials</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#VolumeOfWaterUse -->
+    <!-- https://w3id.org/diro/ontology/diro#VolumeOfWaterUse -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#VolumeOfWaterUse">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ImpactDriver"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#VolumeOfWaterUse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ImpactDriver"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#affects"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#StateOfNature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#affects"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#StateOfNature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Activity uses water.
@@ -2056,14 +2056,14 @@ Examples of metrics include volume of water used, etc.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#WaterFlowRegulationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#WaterFlowRegulationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#WaterFlowRegulationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#WaterFlowRegulationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#WaterRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#WaterRisk"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Baseline flow maintenance services are the ecosystem contributions to the regulation of river flows and groundwater and lake water tables.
@@ -2078,20 +2078,20 @@ This is a final ecosystem service.</rdfs:comment>
     
 
 
-    <!-- https://ecognos.io/ontology/diro#WaterPurificationServices -->
+    <!-- https://w3id.org/diro/ontology/diro#WaterPurificationServices -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#WaterPurificationServices">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#RegulatingAndMaintenanceServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#WaterPurificationServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#RegulatingAndMaintenanceServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#WaterRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#WaterRisk"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Water purification services are the ecosystem contributions to the restoration and maintenance of the chemical condition of surface water and groundwater bodies through the breakdown or removal of nutrients and other pollutants by ecosystem components that mitigate the harmful effects of the pollutants on human use or health.
@@ -2101,10 +2101,10 @@ This may be recorded as a final or intermediate ecosystem service.</rdfs:comment
     
 
 
-    <!-- https://ecognos.io/ontology/diro#WaterRisk -->
+    <!-- https://w3id.org/diro/ontology/diro#WaterRisk -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#WaterRisk">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#PhysicalRisk"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#WaterRisk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#PhysicalRisk"/>
         <rdfs:comment xml:lang="en">Area of high physical water risk include limited water availability, flooding and poor quality
 of water.
 This also includes marine areas with high levels of land-based pollution.</rdfs:comment>
@@ -2113,20 +2113,20 @@ This also includes marine areas with high levels of land-based pollution.</rdfs:
     
 
 
-    <!-- https://ecognos.io/ontology/diro#WaterSupply -->
+    <!-- https://w3id.org/diro/ontology/diro#WaterSupply -->
 
-    <owl:Class rdf:about="https://ecognos.io/ontology/diro#WaterSupply">
-        <rdfs:subClassOf rdf:resource="https://ecognos.io/ontology/diro#ProvisioningServices"/>
+    <owl:Class rdf:about="https://w3id.org/diro/ontology/diro#WaterSupply">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/diro/ontology/diro#ProvisioningServices"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#ChangesInOtherRegulatingAndMaintenanceEcosystemServices"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ecognos.io/ontology/diro#atRiskFrom"/>
-                <owl:someValuesFrom rdf:resource="https://ecognos.io/ontology/diro#WaterRisk"/>
+                <owl:onProperty rdf:resource="https://w3id.org/diro/ontology/diro#atRiskFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/diro/ontology/diro#WaterRisk"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Water supply services reflect the combined ecosystem contributions of water flow regulation, water purification, and other ecosystem services to the supply of water of appropriate quality to users for various uses including household consumption.
@@ -2144,7 +2144,7 @@ This is a final ecosystem service.</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="https://ecognos.io/ontology/diro#isicCode">
+    <rdf:Description rdf:about="https://w3id.org/diro/ontology/diro#isicCode">
         <rdfs:label xml:lang="en">isicCode</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
